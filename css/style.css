@@ -1,0 +1,442 @@
+html {
+    scroll-behavior: smooth;
+    
+}
+
+body {
+ 
+  margin: 0;
+  padding: 0;
+   background: #a6a2a221
+}
+
+
+.nav-bar li{
+  display: inline-block;
+
+}
+
+.nav-bar ul{
+  list-style: none;
+  background: #58575721;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-bar img {
+  margin-left: 10px;
+  width: 95px;
+  height: 85px;
+  border: 0;
+  border-radius: 25px;
+}
+
+
+.nav-bar a {
+  text-decoration: none;
+    color: rgb(1, 5, 53);
+    width: 100px;
+    display: block;
+    padding: 15px;
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.nav-bar a:hover{
+  background: #38363621;
+  transition: 0.4s;
+}
+
+.menu {
+  list-style: none;
+  display: inline-block;
+  overflow: hidden;
+  text-align: center;
+}
+
+.hamburger {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 22px;
+  right: 22px;
+  display: none;
+}
+
+.hamburger:hover div {
+  background: black;
+}
+
+.hamburger div {
+  background: #605c5c;
+  width: 35px;
+  height: 5px;
+  border-radius: 19px;
+  margin: 1px;
+}
+
+.main {
+  padding: 15px;
+}
+
+.image-slider {
+  width: 95vw;
+  height: 400px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 5px grey;
+  overflow: hidden;
+}
+
+.image-slider img {
+  width: 100%;
+  height: 100%;
+}
+
+.tag-line {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 95%;
+  position: relative;
+  left: 0;
+  height: 150px;
+  margin: 25px auto;
+  padding: 5px;
+  background: #e6e6e6;
+  font-size: 30px;
+  text-align: center;
+  box-shadow: 0 0 5px grey;
+}
+
+.recent-projects {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 5px;
+  font-size: 23px;
+}
+
+.recent-projects h2 {
+  margin-bottom: 5px;
+}
+
+hr {
+  width: 80%;
+}
+
+.project-item-wrapper {
+  display: flex;
+  margin-top: 15px;
+  justify-content: center;
+}
+
+.project-item {
+  display: flex;
+  flex-direction: column;
+  margin: 15px;
+  align-items: center;
+  text-align: center;
+  box-shadow: 0 0 5px grey;
+  padding: 15px;
+  width: 35%;
+}
+
+.project-item img {
+  width: 300px;
+  height: 200px;
+}
+
+.project-item p {
+  font-size: 18px;
+}
+
+.team {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 15px 0;
+  font-size: 23px;
+}
+
+.team h2 {
+  margin-bottom: 5px;
+}
+
+hr {
+  width: 80%;
+}
+
+.team-members {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  margin-top: 15px;
+  width: 90%;
+  padding: 10px 25px;
+  box-shadow: 0 0 5px #000000b7;
+  justify-content: center;
+}
+
+.member {
+  display: flex;
+  flex-direction: column;
+  margin: 15px;
+  align-items: center;
+  text-align: center;
+  
+}
+
+.member img {
+  width: 180px;
+  height: 180px;
+  border-radius: 180px;
+}
+
+.member p {
+  font-size: 18px;
+}
+
+.footer {
+  display: flex;
+  /* flex-direction: column; */
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: #e6e6e6;
+  position: absolute;
+  width: 100%;
+  font-size: 15px;
+}
+
+p a {
+  text-decoration: none;
+}
+
+@media screen and (max-width: 840px) {
+  .nav-bar a {
+    font-size: 20px;
+  }
+  .tag-line {
+    font-size: 25px;
+  }
+  .recent-projects {
+    font-size: 18px;
+  }
+  .project-item img {
+    width: 250px;
+    height: 180px;
+  }
+  .team-members {
+    grid-template-columns: auto auto;
+  }
+  .team {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .nav-bar a {
+    font-size: 17px;
+  }
+  .project-item-wrapper {
+    flex-direction: column;
+    margin: auto;
+    align-items: center;
+  }
+  .project-item {
+    width: 75%;
+  }
+  .project-item img {
+    width: 350px;
+    height: 280px;
+  }
+  .footer {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .nav-bar {
+    flex-direction: column;
+    height: 80px;
+    width: 100%;
+
+    transition: all 0.7s ease-out;
+  }
+  .nav-bar img {
+    height: 75px;
+    width: 85px;
+  }
+  .menu {
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+
+  }
+  .hamburger {
+    display: block;
+  }
+  .show {
+    opacity: 0;
+}
+  .nav-height {
+    height: 170px;
+}
+ 
+  .nav-bar .menu li {
+    margin: 4px;
+  }
+  .project-item img {
+    width: 300px;
+    height: 250px;
+  }
+}
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 15px;
+  height: 15px;
+  text-align: center;
+  text-decoration: none;
+  margin-left: auto;
+  margin-right: auto;
+  margin: 2px 2px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #00000021;
+  color: white;
+  border-radius: 50%;
+  
+}
+
+.fa-twitter {
+  background: #00000021;
+  color: white;
+  border-radius: 50%;
+}
+
+
+
+.section-down {
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  padding: 50px;
+  width: 80%;
+  margin: auto;
+}
+
+.reverse-order {
+  flex-direction: row-reverse;
+}
+
+.thumbnail {
+  padding: 8px;
+  display: flex;
+  align-items: center;
+}
+
+.imgFluid {
+  height: 200px;
+  width: 200px;
+  border: 0;
+  box-shadow: 0 0 12px grey;
+  border-radius: 150px;
+}
+
+.hr-end {
+  display: flex;
+  justify-content: flex-end;
+}
+
+hr {
+  width: 50%;
+}
+
+
+.video {
+  aspect-ratio: 16 / 9;
+  width: 50%;
+  display: block;
+}
+@supports not (aspect-ratio: 1) {
+  /* ... implement your fallback here */
+}
+
+.nav-bar ul li a.active-page
+{
+  background-color:#38363621;
+}
+
+#searchbar{
+  margin-left: 15%;
+  padding:15px;
+  border-radius: 10px;
+}
+
+input[type=text] {
+   width: 30%;
+   -webkit-transition: width 0.15s ease-in-out;
+   transition: width 0.15s ease-in-out;
+}
+
+/* When the input field gets focus,
+     change its width to 100% */
+input[type=text]:focus {
+  width: 70%;
+}
+
+#list{
+ font-size:  1.5em;
+ margin-left: 90px;
+}
+
+.courses{
+display: list-item;    
+}
+
+.help {
+  width: 40px;
+  margin: 0 auto;
+}
+
+.help .question {
+  height: 40px;
+  width: 40px;
+  background: #ccc;
+  font-size: 32px;
+  line-height: 40px;
+  text-align: center;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.help .popup, .help .popup2 {
+  width: 560px;
+  height: 0px;
+  text-align: left;
+  overflow: hidden;
+  position: relative;
+  background: #eee;
+  opacity: 0;
+  transition: 1s;
+}
+
+.help .popup {
+  left: -260px;
+  top: 10px;
+}
+
+.help:hover .popup {
+  opacity: 1;
+  height: 170px;
+}
